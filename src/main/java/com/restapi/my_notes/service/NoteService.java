@@ -35,7 +35,7 @@ public class NoteService {
         noteRepo.deleteAll();
     }
 
-    public Note updateBook(Note note, int id) {
+    public Note updateNote(Note note, int id) {
         note.setId(id);
         noteRepo.save(note);
         return note;
